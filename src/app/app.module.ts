@@ -1,3 +1,4 @@
+import { CoursesService } from './courses.service';
 import { CourcesComponent } from './../../.history/src/app/cources.component_20220216160223';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,7 +18,10 @@ import { CourseComponent } from './course/course.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+
+    CoursesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
